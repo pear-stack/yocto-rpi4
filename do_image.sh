@@ -1,6 +1,6 @@
 #!/bin/bash
 
-IMAGE="core-image-base"
+IMAGE="my-qt5-image"
 IMAGE_DIR="build/tmp/deploy/images/raspberrypi4"
 
 . layers/poky/oe-init-build-env
