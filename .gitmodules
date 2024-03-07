@@ -13,3 +13,6 @@
 [submodule "layers/meta-mui"]
 	path = layers/meta-mui
 	url = https://github.com/pear-stack/meta-mui.git
+[submodule "layers/meta-rpimachines"]
+	path = layers/meta-rpimachines
+	url = https://github.com/pear-stack/meta-rpimachines.git
