@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export MACHINE="r4b"
+export TMPDIR="/media/pear/embedded/rpi/mui/build/tmp"
 export IMAGE="mui-base-image"
 export VERSION=$(date +"%d%m%y_%H%M")
 
@@ -29,6 +30,7 @@ source layers/poky/oe-init-build-env
 bitbake $IMAGE
 
 echo "Deploying $IMAGE image"
+rm -rf ../artifacts/${IMAGE}*
 cp ../${IMAGE_DIR}/${IMAGE}-${MACHINE}.wic.bz2 ../artifacts/
 bzip2 -d -f ../artifacts/${IMAGE}-${MACHINE}.wic.bz2
 mv ../artifacts/${IMAGE}-${MACHINE}.wic ../artifacts/${IMAGE}-${VERSION}.rpi-sdimg
