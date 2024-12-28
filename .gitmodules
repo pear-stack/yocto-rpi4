@@ -13,12 +13,18 @@
 [submodule "layers/meta-rpimachines"]
 	path = layers/meta-rpimachines
 	url = https://github.com/pear-stack/meta-rpimachines.git
-[submodule "layers/meta-rust"]
-	path = layers/meta-rust
-	url =  https://github.com/meta-rust/meta-rust
 [submodule "layers/meta-slint"]
 	path = layers/meta-slint
 	url = https://github.com/slint-ui/meta-slint.git
 [submodule "layers/meta-clang"]
 	path = layers/meta-clang
 	url = https://github.com/kraj/meta-clang.git
+[submodule "layers/meta-rauc"]
+	path = layers/meta-rauc
+	url = https://github.com/rauc/meta-rauc.git
+[submodule "layers/meta-rauc-community"]
+	path = layers/meta-rauc-community
+	url = https://github.com/leon-anavi/meta-rauc-community.git
+[submodule "layers/meta-rust-bin"]
+	path = layers/meta-rust-bin
+	url = https://github.com/rust-embedded/meta-rust-bin.git

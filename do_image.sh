@@ -31,6 +31,6 @@ bitbake $IMAGE
 
 echo "Deploying $IMAGE image"
 rm -rf ../artifacts/${IMAGE}*
-cp ../${IMAGE_DIR}/${IMAGE}-${MACHINE}.wic.bz2 ../artifacts/
-bzip2 -d -f ../artifacts/${IMAGE}-${MACHINE}.wic.bz2
-mv ../artifacts/${IMAGE}-${MACHINE}.wic ../artifacts/${IMAGE}-${VERSION}.rpi-sdimg
+cp ../${IMAGE_DIR}/${IMAGE}-${MACHINE}.rootfs.wic.bz2 ../artifacts/
+bzip2 -d -f ../artifacts/${IMAGE}-${MACHINE}.rootfs.wic.bz2
+mv ../artifacts/${IMAGE}-${MACHINE}.rootfs.wic ../artifacts/${IMAGE}-${VERSION}.rpi-sdimg
